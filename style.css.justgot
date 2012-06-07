@@ -1,0 +1,305 @@
+/*
+Theme Name: Twenty Eleven
+Theme URI: http://wordpress.org/extend/themes/twentyeleven
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+Version: 1.3
+License: GNU General Public License
+License URI: license.txt
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+/* WORDPRESS STYLE
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus { remember to define focus styles! 
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table { tables still need 'cellspacing="0"' in the markup 
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* =Structure
+----------------------------------------------- */
+body{
+width: 1040px;
+margin: 0 auto;
+margin-top: 25px;
+font-family: Arial, san-serif;
+color:grey;
+background: url(http://shawnlykken.com/temp_one/wp-content/themes/foo/images/bck.png);
+
+}
+/*h1:before{clear:both;}*/
+h1{
+font-size: 12px;
+display:inline-block;
+}
+
+h1, h2, h3, h4 {
+font-family: Futura;
+font-weight: 100;
+letter-spacing: 1px;
+color: #FF339a;
+}
+
+p{}
+
+.clear{
+clear:both;
+float:left;
+}
+
+hr{
+height: 1px;
+border: none;
+background-color: #FF339a;
+margin: 5px 0px 5px 0px;
+
+}
+
+.content{
+width: 300px;
+border: dashed 1px black;
+}
+
+
+ul.nav , a{
+font-size: 11px;
+font-family: georgia;
+font-style: italic;
+color: #696969;
+padding:0px;  /*This fixes the issues with the ul indent */
+}
+
+li{
+margin-right:20px;
+}
+
+
+
+.boxed_style{
+color: #696969;
+}
+
+.inline {
+display: inline;
+}
+
+li:hover{
+color: red;
+}
+
+.large_type{
+	font-family:georgia;
+	font-style:italic;
+	font-size:28px;
+	line-height:35px;
+	letter-spacing:1px;
+	font-weight:600px;
+	text-align:justify;
+	text-shadow: 1px 1px 0px  white, -.25px -.25px 0px  #383838;
+	}
+
+.clear{clear: both;}
+
+	/* clearfix */
+  
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+	/* clearfix */
+
+.f_right{
+float:right;
+}
+.f_left{
+float:left;
+}
+
+#main_content{
+margin-top:15px;
+}
+fieldset{
+display:inline;
+}
+
+input{
+display:block;
+}
+label{
+display:block;
+}
+
+div.total{
+background-color:blue;
+width:100%;
+clear:both;
+margin: 0px auto;
+text-align:center;
+-moz-column-count:3;
+height:100%;
+float:left;
+}
+.para_first{
+color:red;
+}
+.sample{
+height:50px;
+width:50px;
+background-color:yellow;
+margin:0 auto;
+}
+
+input.sz_4{
+width:35px;
+}
+
+#current{
+font-weight:900;
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+display:block;
+margin:0px;
+padding:0px;
+}
+
+#content{
+width:100%;
+}
+
+.gallery {
+height:288px;
+width:1000px;
+/*overflow:hidden;*/
+position:relative;
+}
+
+form textarea {
+border:1px solid #FF339a;
+}
+
+.gal_img{
+position:absolute;
+top:0px;
+left:0px;
+}
+
+
+.found { /*used with the pattern-form.php */
+background:#ccc;
+}
+
+#box {
+width:25px;
+height:25px;
+background:#696969;
+position:relative;
+}
+
+textarea {
+ width:1040px;
+ height:100px;
+ }
+
+#navigation_test {
+display:block;
+}
+
+.f_left{
+float:left;
+}
+
+.post-edit-link {
+color:#FF339a;
+opacity:0.4;
+}
+
+#galPhoto {
+width:1038px;
+border:1px solid #FF339a;
+}
+
+#featured {
+font-size:18px;
+}
+
+.column {
+font-size:12px;
+width:325px;
+float:left;
+border:1px solid #FF339a;
+margin: 0px 4px 0px 4px;
+padding:5px;
+background:white;
+}
+.col-img {
+width:325px;
+}
+
+.block {
+display:block;
+}
+
+.post-meta-key {
+color:#FF339a;
+opacity:0.8;
+}
