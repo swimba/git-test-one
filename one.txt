@@ -7,4 +7,3 @@ foo-bar - new line
 ANOTHER THING ADDED
 CHECK CHECK CHECK
 
-AMENDMENT!!
