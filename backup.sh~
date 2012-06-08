@@ -1,3 +1,0 @@
-#!/bin/bash
-
-tar -czf w3-backup.tar.gz ~/Desktop/w3 
